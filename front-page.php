@@ -2,33 +2,32 @@
 
 <!-- START RIGHT SECTION -->
 <div class="right-content">
-            <!-- START EMAILS SECTION -->
-            <div class="email-list">
-                <p>Welcome to my blog. Subscribe and get my latest blog post in your inbox.</p>
-                <div class="email-input">
-                    <input type="email" class="email" placeholder="Enter email">
-                    <input type="submit" class="submit" value="Submit">
-                </div>
-            </div>
-            <!-- END EMAILS SECTION -->
-            <!-- START BLOG SECTION -->
-            <div class="blog">
-                <?php
-                // Load template post-content in front-page
-                get_template_part('post','content');
-                ?>
-
-                
-            </div>
-            <!-- END BLOG SECTION -->
-            <!-- START NEXT BUTTUON -->
-            <div class="btnNext">
-                <button>More Article <i class="fa-solid fa-circle-chevron-down"></i></button>
-            </div>
-            
-            <!-- END NEXT BUTTON -->
+    <!-- START EMAILS SECTION -->
+    <div class="email-list">
+        <p>Welcome to my blog. Subscribe and get my latest blog post in your inbox.</p>
+        <div class="email-input">
+            <input type="email" class="email" placeholder="Enter email">
+            <input type="submit" class="submit" value="Submit">
         </div>
     </div>
+    <!-- END EMAILS SECTION -->
+    <!-- START BLOG SECTION -->
+    <div class="blog">
+        <?php
+        // Load template post-content in front-page
+        get_template_part('post','content');
+        ?>
+
+        
+    </div>
+    <!-- END BLOG SECTION -->
+    <!-- START NEXT BUTTUON -->
+    <div class="btnNext">
+        <button>More Article <i class="fa-solid fa-circle-chevron-down"></i></button>
+    </div>
+    <!-- END NEXT BUTTON -->
+</div>
+</div>
 
 
 <?php get_footer();?>
