@@ -17,8 +17,6 @@
         // Load template post-content in front-page
         get_template_part('post','content');
         ?>
-
-        
     </div>
     <!-- END BLOG SECTION -->
     <!-- START NEXT BUTTUON -->

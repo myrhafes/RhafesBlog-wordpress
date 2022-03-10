@@ -12,7 +12,7 @@
     
     <?php wp_head();?>
 
-    <title>Rhafes Blog</title>
+    <title>Rhafes's Blog | Hello world</title>
 </head>
 <body>
     <div class="blog-content" id="content">

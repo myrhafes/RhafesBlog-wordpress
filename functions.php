@@ -1,5 +1,17 @@
 <?php 
 
+/*include css from child and parent theme | style.css not updating on WordPress*/
+function mychildtheme_enqueue_styles() {
+
+    $parent_style = 'parent-style';
+    wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
+    wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/Assets/css/master.css', array(), rand(111,9999), 'all' );
+    wp_enqueue_style( 'custom-style', get_stylesheet_directory_uri() . '/style.css', array(), rand(111,9999), 'all' );
+}
+
+add_action( 'wp_enqueue_scripts', 'mychildtheme_enqueue_styles' ); // register hook
+
+
 // Load style
 function load_stylesheets() {
     wp_register_style('fontawesome', get_template_directory_uri() . '/Assets/css/all.min.css', array(), 1, 'all');
@@ -40,4 +52,5 @@ function fn_custom_excerpt_length($length) {
 }
 
 add_filter('excerpt_length', 'fn_custom_excerpt_length')
+
 ?>
