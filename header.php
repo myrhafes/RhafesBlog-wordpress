@@ -9,9 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&display=swap" rel="stylesheet">
-    
+    <!-- FAVICON -->
+    <link rel="icon"  type="image" href="<?php bloginfo('template_directory');?>/Assets/images/favicon.png">
+    <!-- CSS -->
     <?php wp_head();?>
-
+    <!-- TITLE -->
     <title>Rhafes's Blog | Hello world</title>
 </head>
 <body>
@@ -28,7 +30,7 @@
             <i class="fa-solid fa-xmark fa" onclick="closeMenu()"></i>
             <h1>Mohamed Yassine</h1>
             <hr>
-            <img src="<?php bloginfo('template_directory');?>/Assets/images/me.jfif" alt="">
+            <img src="<?php bloginfo('template_directory');?>/Assets/images/me.jfif" alt="Me">
             <p>Hi, my name is Mohamed Yassine RHAFES. 
                 Briefly introduce yourself here. 
                 You can also provide a link to the about page.
