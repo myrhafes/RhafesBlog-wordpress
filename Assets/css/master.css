@@ -452,3 +452,27 @@ body {
     }
 }
 /* END 404 SECTION */
+
+/* START POST CONTENT */
+.right-content .post-content {
+    padding: 40px;
+}
+
+.right-content .post-content .image {
+    text-align: center;
+}
+
+.right-content .post-content .title {
+    text-align: center;
+}
+
+.right-content .post-content .image img {
+    width: 50%;
+}
+
+@media (max-width: 767px) {
+    .right-content .post-content .image img {
+        width: 100%;
+    }
+}
+/* END POST CONTENT */
