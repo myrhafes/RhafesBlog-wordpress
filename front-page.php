@@ -19,11 +19,6 @@
         ?>
     </div>
     <!-- END BLOG SECTION -->
-    <!-- START NEXT BUTTUON -->
-    <div class="btnNext">
-        <button>More Article <i class="fa-solid fa-circle-chevron-down"></i></button>
-    </div>
-    <!-- END NEXT BUTTON -->
 </div>
 </div>
 

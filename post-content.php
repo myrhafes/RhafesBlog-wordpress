@@ -8,25 +8,20 @@
 ?>
 
 <?php if(have_posts()):?>
-<?php while(have_posts()): the_post();?>
-    <!-- START CARD -->
-    <div class="card">
-            <?php
-            if(has_post_thumbnail()):?>
-                <a href="<?php echo the_permalink() ?>">
-                    <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="Blog">
-                </a>
-            <?php endif; ?>
-            <div class="text">
-                <h2><?php the_title();?></h2>
-                <p>
-                    <?php echo get_the_excerpt();?>
-                </p>
-                <a href="<?php echo the_permalink() ?>">read more <i class="fa-solid fa-arrow-right"></i></a>
+    <?php while(have_posts()): the_post();?>
+    <?php
+        // Load template post-content in front-page
+        get_template_part('card','post');
+    ?>
+    <?php endwhile;?>
+    <!-- START NEXT BUTTUON -->
+    <?php global $wp_query;
+        if ($wp_query->max_num_pages > 1) : ?>
+            <div class="btnNext">
+                <button  id="load-more">More Article <i class="fa-solid fa-circle-chevron-down"></i></button>
             </div>
-    </div>
-    <!-- END CARD -->
-<?php endwhile;?>
+        <?php endif; ?>
+    <!-- END NEXT BUTTON -->
 <?php else:?>
 <?php echo wordwrap('Sorry, No posts were found');?>
 <?php endif;?>

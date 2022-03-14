@@ -1,5 +1,9 @@
 <?php 
 
+// LOAD MORE ARTICLE
+
+
+
 /*include css from child and parent theme | style.css not updating on WordPress*/
 function mychildtheme_enqueue_styles() {
 
@@ -53,4 +57,7 @@ function fn_custom_excerpt_length($length) {
 
 add_filter('excerpt_length', 'fn_custom_excerpt_length')
 
+
+
 ?>
+
